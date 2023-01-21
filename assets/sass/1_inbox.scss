@@ -1,0 +1,117 @@
+.page__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-block__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.inbox__name {
+    width: 667px;
+    height: 54px;
+    background-color: #F4A48D;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 35px;
+    padding-top: 15px;
+}
+
+.inbox__enterBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 667px;
+    height: 256px;
+    background-color: rgba(244, 164, 141, 0.18);
+    margin-bottom: 60px;
+}
+
+.inbox__inputfield {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.inbox__lable {
+    padding-right: 34px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.inbox__button {
+    width: 280px;
+    height: 47px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+
+.inbox__listItem {
+    display: grid;
+    grid-template-columns: 1fr 13fr 1.5fr 1.5fr;
+    align-items: center;
+    border: 1px dashed #CCD1D0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 1.3em;
+}
+
+.inbox__item {
+    font-size: 12px;
+    font-weight: 600;
+    width: 470px;
+    // height:15px;
+}
+
+.inbox__btn-edit {
+    height: 40px;
+    width: 40px;
+    background-color: #F4A48D;
+    color: white;
+    // width: 22px;
+    // height: 22px;
+    text-align: center;
+    background-image: url('/assets/images/pencil_white.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 25px;
+
+}
+
+.inbox__btn-delite {
+    height: 40px;
+    width: 40px;
+    background-color: #F4A48D;
+    color: white;
+    // width: 22px;
+    // height: 22px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+
+}
+
+// .inbox__listItems {
+//     overflow: scroll;
+// }
+
+.inbox__btn-edit:before {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.inbox__btn-delite:before {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.inbox__btn-edit:hover,
+.inbox__btn-delite:hover {
+    background-color: #fdc2b1;
+}

@@ -1,0 +1,133 @@
+.page__menu {
+  list-style-type: none;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.menu__list {
+  width: 309px;
+}
+
+.menu__item {
+  padding: 15px;
+  display: block;
+  background: #F4A48D;
+  margin-bottom: 20px;
+  display: block;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.menu__arrow {
+  margin-top: 2px;
+}
+
+.menu__item_selected {
+  background: rgba(7, 183, 206, 0.4);
+}
+
+.menu__item_withSubmenu {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+#delayed,
+#current {
+  font-weight: 800;
+  margin-top: 0;
+}
+
+.menu__item_submenu {
+  display: none;
+  margin-top: 8px;
+  letter-spacing: 1.1px;
+  font-weight: 500;
+  background-color: #fdc2b1;
+  padding: 15px;
+}
+
+.menu__item_submenu li {
+  margin-bottom: 7px;
+  // color: #F4A48D;
+}
+
+.menu__item_withSubmenu.menu__item_submenu_selected+.menu__item_submenu {
+  display: block;
+}
+
+li {
+  display: block;
+}
+
+ul {
+  padding: 0;
+}
+
+.menu__spanTitle {
+  font-size: 16px;
+  font-weight: 800;
+  color: #c5c5c5;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #FFFFFF;
+  outline: none !important;
+}
+
+/* Контейнер подсказок */
+.menu__tooltip {
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+
+/* Текст подсказки */
+.menu__tooltip .menu__tooltiptext {
+  visibility: hidden;
+  width: 309px;
+  background-color: rgb(255, 255, 255);
+  color: #c5c5c5;
+  // text-align: center;
+  padding: 15px 15px;
+  // border-radius: 6px;
+  text-transform: none;
+  box-shadow: 0 0 10px 4px rgba(64, 86, 98, 0.2);
+
+
+  /* Расположите текст подсказки */
+  position: absolute;
+  z-index: 1;
+  top: -138px;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Исчезают в подсказке */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+
+/* Подсказка стрелка */
+.menu__tooltip .menu__tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Отображение текста подсказки при наведении курсора мыши на контейнер подсказки */
+.menu__tooltip:hover .menu__tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

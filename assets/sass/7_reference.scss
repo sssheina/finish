@@ -1,0 +1,88 @@
+.reference__container, .reference__container-main, .reference__container-page  {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.reference__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.reference__name {
+    display: flex;
+    flex-direction: row;
+    width: 667px;
+    height: 70px;
+    background-color: #F4A48D;
+    padding-left: 35px;
+    padding-right: 35px;
+    align-items: center;
+    justify-content: space-between;
+}
+.reference__title, .reference__sort {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+
+
+.reference__listItem {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 7fr 4fr 1.5fr 1.5fr;
+    align-items: center;
+    border: 1px dashed #CCD1D0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 1.3em;
+    // height: 70px;
+}
+.reference__item {
+    
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+
+
+
+.reference__block {
+    width: 667px;
+}
+
+.reference__breadcrumb {
+    display: flex;
+    flex-direction: row;
+}
+
+.reference__btn-edit, .reference__btn-delite {
+    height: 40px;
+    width: 40px;
+    background-color: #F4A48D;
+    color:white;
+}
+
+
+.reference__buttonpic {
+    width: 22px;
+    height: 22px;
+    text-align: center;
+}
+
+.reference__buttonPlus {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: #f4a48d;
+  }
+  
+  
+  .reference__btn {
+    height: 40px;
+    width: 40px;
+    background-color: #f4a48d;
+    color: white;
+  }
